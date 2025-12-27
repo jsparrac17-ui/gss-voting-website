@@ -18,22 +18,26 @@
 </head>
 
 <body>
-  <!-- Header fijo -->
-  <header class="header">
-    <div class="container header-inner">
-      <a class="brand" href="#inicio" aria-label="Ir al inicio">
-        <img src="assets/logo_1.png" class="logo-header" alt="GSS Voting Logistics">
+  <!-- Header mobil-->
+<header class="header">
+  <div class="container header-inner">
+    <a class="brand" href="#inicio" aria-label="Ir al inicio">
+      <img src="assets/logo_1.png" class="logo-header" alt="GSS Voting Logistics">
     </a>
 
+    <!-- Botón hamburguesa (solo móvil) -->
+    <button class="menu-btn" id="menuBtn" aria-label="Abrir menú" aria-expanded="false">
+      <i class="fa-solid fa-bars"></i>
+    </button>
 
-      <nav class="nav" aria-label="Navegación principal">
-        <a href="#quienes">Quiénes somos</a>
-        <a href="#servicios">Servicios</a>
-        <a href="#ventajas">Ventajas</a>
-        <a href="#contacto" class="nav-cta">Contactar</a>
-      </nav>
-    </div>
-  </header>
+    <nav class="nav" id="navMenu" aria-label="Navegación principal">
+      <a href="#quienes">Quiénes somos</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#ventajas">Ventajas</a>
+      <a href="#contacto" class="nav-cta">Contactar</a>
+    </nav>
+  </div>
+</header>
 
   <main id="inicio" class="main">
     <!-- Hero sin imagen -->
@@ -61,6 +65,7 @@
         </div>
       </div>
     </section>
+
 
     <!-- Quiénes somos -->
     <section id="quienes" class="section">
@@ -361,10 +366,43 @@
   >
     <i class="fa-brands fa-whatsapp"></i>
   </a>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    // Año automático
+    const yearEl = document.getElementById('year');
+    if (yearEl) yearEl.textContent = new Date().getFullYear();
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
+    // Menú móvil toggle
+    const menuBtn = document.getElementById('menuBtn');
+    const navMenu = document.getElementById('navMenu');
 
+    if (!menuBtn || !navMenu) return;
+
+    menuBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const isOpen = navMenu.classList.toggle('nav-open');
+      menuBtn.setAttribute('aria-expanded', String(isOpen));
+    });
+
+    // Cerrar al hacer click en un link del menú
+    navMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navMenu.classList.remove('nav-open');
+        menuBtn.setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    // Cerrar al hacer click fuera del menú
+    document.addEventListener('click', (e) => {
+      const clickedInsideNav = navMenu.contains(e.target);
+      const clickedMenuBtn = menuBtn.contains(e.target);
+      if (!clickedInsideNav && !clickedMenuBtn) {
+        navMenu.classList.remove('nav-open');
+        menuBtn.setAttribute('aria-expanded', 'false');
+      }
+    });
+
+    // Scroll suave
     document.querySelectorAll('a[href^="#"]').forEach(a => {
       a.addEventListener('click', (e) => {
         const id = a.getAttribute('href');
@@ -375,6 +413,10 @@
         el.scrollIntoView({ behavior: 'smooth', block: 'start' });
       });
     });
-  </script>
+  });
+</script>
+
 </body>
 </html>
+
+
