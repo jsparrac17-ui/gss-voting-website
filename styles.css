@@ -29,23 +29,83 @@ html,body{ font-family:'Montserrat',system-ui,-apple-system,Segoe UI,Roboto,Aria
   border-bottom:1px solid rgba(15,111,120,0.12);
   z-index:1000;
 }
+
 .logo-header{
   height: 60px;      /* Desktop */
   width: auto;
   display: block;
 }
-/* Tablet */
-@media (max-width: 900px){
-  .logo-header{
-    height: 48px;
-  }
+
+.menu-btn{
+  display:none; /* se activa en móvil */
+  background: transparent;
+  border: 0;
+  color: var(--dark);
+  font-size: 1.35rem;
+  padding: 10px 12px;
+  border-radius: 12px;
+  cursor: pointer;
 }
-/* Móvil */
-@media (max-width: 600px){
-  .logo-header{
-    height: 34px;
-  }
+
+.menu-btn:focus{
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(15,111,120,0.14);
 }
+
+@media (max-width: 620px){
+  .logo-header{
+    height: 40px;
+    max-width: 140px;
+  }
+
+  .menu-btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+  }
+
+  /* NAV móvil */
+  .nav{
+    position: absolute;
+    top: var(--header-h);
+    left: 0;
+    right: 0;
+    background: rgba(255,255,255,0.98);
+    border-bottom: 1px solid rgba(15,111,120,0.12);
+    display: none;              /* 🔒 cerrado por defecto */
+    flex-direction: column;
+    gap: 10px;                  /* 👈 movido aquí */
+    padding: 10px 14px;
+  }
+
+  .nav.nav-open{
+    display:flex;               /* 🔓 solo abierto con JS */
+  }
+
+  .nav a{
+    padding: 12px 10px;
+    border-radius: 10px;
+    width: 100%;
+    font-size: 0.9rem;          /* 👈 movido aquí */
+  }
+
+  .nav a:hover{
+    background: rgba(15,111,120,0.08);
+  }
+
+  .nav-cta{
+    width: 100%;
+    text-align: center;
+    margin-top: 6px;
+  }
+
+  /* Otros ajustes móviles */
+  .title{ font-size:2.25rem; }
+  .cards{ grid-template-columns: 1fr; }
+  .features{ grid-template-columns: 1fr; }
+  .grid-field{ grid-template-columns: 1fr; }
+}
+
 
 .header-inner{
   height:100%;
@@ -53,6 +113,14 @@ html,body{ font-family:'Montserrat',system-ui,-apple-system,Segoe UI,Roboto,Aria
   align-items:center;
   justify-content:space-between;
   gap:16px;
+}
+/* NAV ESCRITORIO */
+@media (min-width: 621px){
+  .nav{
+    display:flex;
+    align-items:center;
+    gap:18px;
+  }
 }
 
 .brand{ display:flex; align-items:center; gap:10px; text-decoration:none; }
@@ -62,11 +130,6 @@ html,body{ font-family:'Montserrat',system-ui,-apple-system,Segoe UI,Roboto,Aria
   letter-spacing:0.2px;
 }
 
-.nav{
-  display:flex;
-  align-items:center;
-  gap:18px;
-}
 
 .nav a{
   text-decoration:none;
@@ -497,14 +560,3 @@ html,body{ font-family:'Montserrat',system-ui,-apple-system,Segoe UI,Roboto,Aria
   .features{ grid-template-columns: repeat(2, 1fr); }
   .grid-2{ grid-template-columns: 1fr; }
 }
-
-@media (max-width: 620px){
-  .nav{ gap:10px; }
-  .nav a{ font-size:0.9rem; }
-  .title{ font-size:2.25rem; }
-  .cards{ grid-template-columns: 1fr; }
-  .features{ grid-template-columns: 1fr; }
-  .grid-field{ grid-template-columns: 1fr; }
-}
-
-
