@@ -1,421 +1,334 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>GSS Voting Logistics | Logística y Votación Electrónica</title>
-  <meta name="description" content="GSS Voting Logistics: votación electrónica y logística integral para asambleas residenciales. Registro, sonido, grabación, actas e informes." />
-
-  <!-- Google Font -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GSS Voting Logistics | Asambleas ágiles y transparentes</title>
+  <meta name="description" content="Votación electrónica y logística integral para asambleas de propiedad horizontal: registro, sonido, grabación, actas, informes y soporte en sitio.">
+  <meta name="theme-color" content="#0f6f78">
+  <meta property="og:title" content="GSS Voting Logistics | Asambleas ágiles y transparentes">
+  <meta property="og:description" content="Tecnología, logística y acompañamiento para decisiones claras y verificables.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://gsslogistica.com/">
+  <meta property="og:image" content="https://gsslogistica.com/assets/logo.png">
+  <link rel="icon" href="assets/logo.png" type="image/png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-  <!-- Font Awesome (íconos) -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-  <!-- Header mobil-->
-<header class="header">
-  <div class="container header-inner">
-    <a class="brand" href="#inicio" aria-label="Ir al inicio">
-      <img src="assets/logo_1.png" class="logo-header" alt="GSS Voting Logistics">
-    </a>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
 
-    <!-- Botón hamburguesa (solo móvil) -->
-    <button class="menu-btn" id="menuBtn" aria-label="Abrir menú" aria-expanded="false">
-      <i class="fa-solid fa-bars"></i>
-    </button>
+  <header class="header" id="inicio">
+    <div class="container header-inner">
+      <a class="brand" href="#inicio" aria-label="GSS Voting Logistics, ir al inicio">
+        <img src="assets/logo_1.png" class="logo-header" alt="GSS Voting Logistics" width="526" height="133">
+      </a>
 
-    <nav class="nav" id="navMenu" aria-label="Navegación principal">
-      <a href="#quienes">Quiénes somos</a>
-      <a href="#servicios">Servicios</a>
-      <a href="#ventajas">Ventajas</a>
-      <a href="#contacto" class="nav-cta">Contactar</a>
-    </nav>
-  </div>
-</header>
+      <button class="menu-btn" id="menuBtn" type="button" aria-label="Abrir menú" aria-controls="navMenu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
 
-  <main id="inicio" class="main">
-    <!-- Hero sin imagen -->
-    <section class="hero">
-      <div class="container hero-inner">
-        <p class="eyebrow">Votación electrónica para asambleas residenciales</p>
-        <h1 class="title">
-          Transparencia, rapidez y control
-          <span class="title-accent">en cada decisión.</span>
-        </h1>
-        <p class="lead">
-          Servicio integral: votación electrónica, logística del evento, registro,
-          sonido, grabación de audio y redacción del acta.
-        </p>
+      <nav class="nav" id="navMenu" aria-label="Navegación principal">
+        <a href="#quienes">Nosotros</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#proceso">Cómo funciona</a>
+        <a href="#contacto" class="nav-cta">Cotizar asamblea <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+      </nav>
+    </div>
+  </header>
 
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="#contacto">Solicitar cotización</a>
-          <a class="btn btn-outline" href="#servicios">Ver servicios</a>
+  <main id="contenido">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-glow hero-glow-one"></div>
+      <div class="hero-glow hero-glow-two"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span></span> Tecnología y logística para propiedad horizontal</p>
+          <h1 id="hero-title">Decisiones claras.<br><span>Asambleas que avanzan.</span></h1>
+          <p class="lead">Hacemos que cada votación sea ágil, transparente y verificable. Integramos registro, votación electrónica, sonido, grabación, actas y soporte operativo en un solo servicio.</p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contacto">Solicitar cotización <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+            <a class="btn btn-secondary" href="#servicios"><i class="fa-solid fa-circle-play" aria-hidden="true"></i> Conocer el servicio</a>
+          </div>
+
+          <div class="trust-row">
+            <div class="trust-item"><strong>3 años</strong><span>de experiencia</span></div>
+            <div class="trust-divider"></div>
+            <div class="trust-item"><strong>Alto volumen</strong><span>de unidades</span></div>
+            <div class="trust-divider"></div>
+            <div class="trust-item"><strong>En sitio</strong><span>soporte completo</span></div>
+          </div>
         </div>
 
-        <div class="hero-badges">
-          <div class="badge">✔ Resultados en tiempo real</div>
-          <div class="badge">✔ Control por coeficiente</div>
-          <div class="badge">✔ Soporte en sitio</div>
+        <div class="hero-visual" role="img" aria-label="Representación de resultados de una votación electrónica">
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <div class="dashboard-card">
+            <div class="dashboard-top">
+              <div>
+                <p class="dashboard-label">Asamblea en curso</p>
+                <h2>Resultados en tiempo real</h2>
+              </div>
+              <span class="live-pill"><i></i> En vivo</span>
+            </div>
+
+            <div class="question-box">
+              <span>Pregunta 04</span>
+              <p>¿Aprueba la propuesta presentada?</p>
+            </div>
+
+            <div class="results">
+              <div class="result-row">
+                <div class="result-meta"><span><i class="dot yes"></i> Sí</span><strong>72%</strong></div>
+                <div class="result-track"><span class="bar bar-yes"></span></div>
+              </div>
+              <div class="result-row">
+                <div class="result-meta"><span><i class="dot no"></i> No</span><strong>18%</strong></div>
+                <div class="result-track"><span class="bar bar-no"></span></div>
+              </div>
+              <div class="result-row">
+                <div class="result-meta"><span><i class="dot abstain"></i> Abstención</span><strong>10%</strong></div>
+                <div class="result-track"><span class="bar bar-abstain"></span></div>
+              </div>
+            </div>
+
+            <div class="dashboard-footer">
+              <div><span>Participación</span><strong>84,6%</strong></div>
+              <div><span>Estado</span><strong class="approved"><i class="fa-solid fa-circle-check"></i> Aprobado</strong></div>
+            </div>
+          </div>
+
+          <div class="float-card float-card-top"><i class="fa-solid fa-shield-halved"></i><span><strong>Proceso verificable</strong>Reportes por pregunta</span></div>
+          <div class="float-card float-card-bottom"><i class="fa-solid fa-bolt"></i><span><strong>Resultado inmediato</strong>Sin conteos manuales</span></div>
+          <p class="demo-note">Visual demostrativo</p>
         </div>
       </div>
     </section>
 
+    <section class="proof-strip" aria-label="Beneficios principales">
+      <div class="container proof-grid">
+        <div><i class="fa-solid fa-check"></i> Votación por coeficiente</div>
+        <div><i class="fa-solid fa-check"></i> Sí / No / Abstención</div>
+        <div><i class="fa-solid fa-check"></i> Opción múltiple A–F</div>
+        <div><i class="fa-solid fa-check"></i> Informes listos para acta</div>
+      </div>
+    </section>
 
-    <!-- Quiénes somos -->
-    <section id="quienes" class="section">
-      <div class="container grid-2">
-        <div>
-          <h2 class="section-title">¿Quiénes somos?</h2>
-          <p class="text">
-            En <strong>GSS Voting Logistics</strong> nos especializamos en la ejecución completa de asambleas:
-            desde la logística y el registro, hasta la <strong>votación electrónica</strong> y la consolidación
-            de resultados. Nuestro enfoque es garantizar un proceso <strong>ágil, transparente y verificable</strong>.
-          </p>
-          <p class="text">
-            Trabajamos para que administraciones, consejos y copropietarios tomen decisiones con confianza,
-            con herramientas claras y resultados listos para soportar el acta.
-          </p>
-
-          <div class="stats">
-            <div class="stat">
-              <div class="stat-num">100%</div>
-              <div class="stat-label">Enfocados en asambleas</div>
-            </div>
-            <div class="stat">
-              <div class="stat-num">+</div>
-              <div class="stat-label">Soporte y operación en sitio</div>
-            </div>
-            <div class="stat">
-              <div class="stat-num">✔</div>
-              <div class="stat-label">Proceso verificable</div>
-            </div>
-          </div>
+    <section id="quienes" class="section about-section">
+      <div class="container about-grid reveal">
+        <div class="section-heading">
+          <p class="section-kicker">Quiénes somos</p>
+          <h2>El respaldo operativo para una asamblea bien ejecutada</h2>
         </div>
-
-        <div class="panel">
-          <h3 class="panel-title">Nuestro compromiso</h3>
-          <ul class="list">
-            <li><strong>Claridad:</strong> preguntas bien estructuradas y opciones de voto definidas.</li>
-            <li><strong>Transparencia:</strong> reporte de resultados por pregunta y consolidado final.</li>
-            <li><strong>Orden:</strong> acompañamiento en el flujo de asamblea y tiempos de votación.</li>
-            <li><strong>Respaldo:</strong> soporte técnico y operativo durante todo el evento.</li>
-          </ul>
-
-          <div class="note">
-            <strong>Tip:</strong> Podemos adaptar el tipo de votación (Sí/No/Abstención, opción múltiple, ponderación por coeficiente)
-            a las reglas de tu copropiedad.
-          </div>
+        <div class="about-copy">
+          <p>En <strong>GSS Voting Logistics</strong> nos especializamos en la ejecución integral de asambleas de propiedad horizontal. Acompañamos el proceso desde el registro de asistentes hasta la consolidación de resultados y la elaboración del acta.</p>
+          <p>Nuestra experiencia en asambleas con alto volumen de unidades nos permite anticipar necesidades, mantener el orden del evento y entregar información clara para administraciones, consejos y copropietarios.</p>
+          <div class="signature-line"><span>GSS</span><p><strong>Claridad, transparencia y respaldo</strong><br>en cada etapa de la asamblea.</p></div>
         </div>
       </div>
     </section>
 
-    <!-- Servicios (con íconos) -->
-    <section id="servicios" class="section section-muted">
+    <section id="servicios" class="section services-section">
       <div class="container">
-        <h2 class="section-title">Servicios</h2>
-        <p class="section-subtitle">
-          Solución integral para asambleas: operación, tecnología y soporte para que el evento fluya.
-        </p>
+        <div class="section-heading centered reveal">
+          <p class="section-kicker">Una solución completa</p>
+          <h2>Todo lo que tu asamblea necesita, en un solo equipo</h2>
+          <p>Coordinamos tecnología, operación y soporte para que la administración pueda concentrarse en dirigir la reunión.</p>
+        </div>
 
-        <div class="cards">
-          <article class="card">
-            <div class="card-head">
-              <div class="icon-chip"><i class="fa-solid fa-check-to-slot"></i></div>
-              <h3 class="card-title">Votación electrónica</h3>
-            </div>
-            <p class="card-text">
-              Votos <strong>Sí / No / Abstención</strong> u <strong>opción múltiple (A–F)</strong> con resultados inmediatos.
-            </p>
-            <ul class="card-list">
-              <li>Resultados en tiempo real</li>
-              <li>Control de tiempos de votación</li>
-              <li>Reportes listos para acta</li>
-            </ul>
+        <div class="service-grid">
+          <article class="service-card service-card-featured reveal">
+            <div class="service-number">01</div>
+            <div class="service-icon"><i class="fa-solid fa-check-to-slot"></i></div>
+            <h3>Votación electrónica</h3>
+            <p>Votos ponderados por coeficiente, resultados inmediatos y control de cada ronda.</p>
+            <ul><li>Sí / No / Abstención</li><li>Opción múltiple A–F</li><li>Resultados en tiempo real</li></ul>
           </article>
 
-          <article class="card">
-            <div class="card-head">
-              <div class="icon-chip"><i class="fa-solid fa-clipboard-user"></i></div>
-              <h3 class="card-title">Registro y asistencia</h3>
-            </div>
-            <p class="card-text">
-              Control del ingreso, verificación y orden del registro de participantes.
-            </p>
-            <ul class="card-list">
-              <li>Lista de asistencia clara</li>
-              <li>Soporte a administración</li>
-              <li>Flujo eficiente de entrada</li>
-            </ul>
+          <article class="service-card reveal">
+            <div class="service-number">02</div>
+            <div class="service-icon"><i class="fa-solid fa-clipboard-user"></i></div>
+            <h3>Registro y asistencia</h3>
+            <p>Ingreso organizado, verificación de participantes y lista de asistencia consolidada.</p>
           </article>
 
-          <article class="card">
-            <div class="card-head">
-              <div class="icon-chip"><i class="fa-solid fa-people-roof"></i></div>
-              <h3 class="card-title">Logística del evento</h3>
-            </div>
-            <p class="card-text">
-              Montaje, coordinación y acompañamiento operativo durante la asamblea.
-            </p>
-            <ul class="card-list">
-              <li>Organización del espacio</li>
-              <li>Acompañamiento a mesa directiva</li>
-              <li>Soporte en sitio</li>
-            </ul>
+          <article class="service-card reveal">
+            <div class="service-number">03</div>
+            <div class="service-icon"><i class="fa-solid fa-people-roof"></i></div>
+            <h3>Logística del evento</h3>
+            <p>Montaje, coordinación del espacio y acompañamiento a la mesa directiva.</p>
           </article>
 
-          <article class="card">
-            <div class="card-head">
-              <div class="icon-chip"><i class="fa-solid fa-microphone-lines"></i></div>
-              <h3 class="card-title">Sonido y grabación</h3>
-            </div>
-            <p class="card-text">
-              Soporte técnico para claridad del evento y respaldo de lo discutido.
-            </p>
-            <ul class="card-list">
-              <li>Audio claro para asistentes</li>
-              <li>Grabación para soporte</li>
-              <li>Respaldo para acta</li>
-            </ul>
+          <article class="service-card reveal">
+            <div class="service-number">04</div>
+            <div class="service-icon"><i class="fa-solid fa-microphone-lines"></i></div>
+            <h3>Sonido y grabación</h3>
+            <p>Audio claro para los asistentes y grabación como respaldo de lo discutido.</p>
           </article>
 
-          <article class="card">
-            <div class="card-head">
-              <div class="icon-chip"><i class="fa-solid fa-file-signature"></i></div>
-              <h3 class="card-title">Redacción de acta</h3>
-            </div>
-            <p class="card-text">
-              Acta estructurada con base en el desarrollo del evento y resultados.
-            </p>
-            <ul class="card-list">
-              <li>Acta clara y organizada</li>
-              <li>Resultados integrados</li>
-              <li>Entrega estructurada</li>
-            </ul>
+          <article class="service-card reveal">
+            <div class="service-number">05</div>
+            <div class="service-icon"><i class="fa-solid fa-file-signature"></i></div>
+            <h3>Redacción del acta</h3>
+            <p>Documento estructurado con el desarrollo del evento y los resultados integrados.</p>
           </article>
 
-          <article class="card">
-            <div class="card-head">
-              <div class="icon-chip"><i class="fa-solid fa-chart-column"></i></div>
-              <h3 class="card-title">Informes y soportes</h3>
-            </div>
-            <p class="card-text">
-              Consolidado por pregunta, totales y evidencias para anexos.
-            </p>
-            <ul class="card-list">
-              <li>Reporte por pregunta</li>
-              <li>Consolidado final</li>
-              <li>Soportes para archivo</li>
-            </ul>
+          <article class="service-card reveal">
+            <div class="service-number">06</div>
+            <div class="service-icon"><i class="fa-solid fa-chart-column"></i></div>
+            <h3>Informes y soportes</h3>
+            <p>Consolidado por pregunta, totales y evidencias organizadas para archivo.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- Ventajas -->
-    <section id="ventajas" class="section">
+    <section id="proceso" class="section process-section">
+      <div class="container process-grid">
+        <div class="process-intro reveal">
+          <p class="section-kicker light">Cómo funciona</p>
+          <h2>Un proceso simple para una jornada sin improvisaciones</h2>
+          <p>Planeamos contigo cada detalle antes del evento y acompañamos la operación de principio a fin.</p>
+          <a class="text-link" href="#contacto">Conversemos sobre tu asamblea <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
+        <ol class="steps">
+          <li class="reveal"><span>1</span><div><h3>Planeamos</h3><p>Revisamos fecha, lugar, número de unidades, coeficientes y requerimientos.</p></div></li>
+          <li class="reveal"><span>2</span><div><h3>Preparamos</h3><p>Configuramos el sistema, organizamos el registro y coordinamos la logística.</p></div></li>
+          <li class="reveal"><span>3</span><div><h3>Operamos</h3><p>Acompañamos la asamblea, gestionamos las votaciones y presentamos resultados.</p></div></li>
+          <li class="reveal"><span>4</span><div><h3>Entregamos</h3><p>Consolidamos informes, soportes y el material requerido para el acta.</p></div></li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="ventajas" class="section advantages-section">
       <div class="container">
-        <h2 class="section-title">Ventajas de trabajar con GSS</h2>
-        <p class="section-subtitle">
-          Reducimos errores, mejoramos tiempos y fortalecemos la confianza en el proceso.
-        </p>
-
-        <div class="features">
-          <div class="feature">
-            <h3 class="feature-title">Más rapidez, menos desgaste</h3>
-            <p class="feature-text">Votaciones ágiles con cierre por tiempo y resultados inmediatos.</p>
-          </div>
-
-          <div class="feature">
-            <h3 class="feature-title">Transparencia verificable</h3>
-            <p class="feature-text">Resultados claros por pregunta y consolidado final, listos para acta.</p>
-          </div>
-
-          <div class="feature">
-            <h3 class="feature-title">Acompañamiento completo</h3>
-            <p class="feature-text">Operamos tecnología y logística: tu administración se concentra en dirigir.</p>
-          </div>
-
-          <div class="feature">
-            <h3 class="feature-title">Adaptable al tipo de votación</h3>
-            <p class="feature-text">Sí/No/Abstención u opción múltiple según el punto a votar.</p>
-          </div>
-
-          <div class="feature">
-            <h3 class="feature-title">Orden y soporte en sitio</h3>
-            <p class="feature-text">Equipo disponible para resolver dudas y mantener el ritmo del evento.</p>
-          </div>
-
-          <div class="feature">
-            <h3 class="feature-title">Respaldo documental</h3>
-            <p class="feature-text">Grabación de audio y soporte para redacción del acta.</p>
-          </div>
+        <div class="section-heading reveal">
+          <p class="section-kicker">Por qué elegir GSS</p>
+          <h2>Más confianza para decidir.<br>Menos desgaste para organizar.</h2>
         </div>
 
-        <div class="callout">
-          <div class="callout-left">
-            <h3 class="callout-title">¿Tienes una asamblea próxima?</h3>
-            <p class="callout-text">Cuéntanos fecha, ciudad y número de unidades. Te respondemos con una propuesta.</p>
-          </div>
-          <a class="btn btn-primary" href="#contacto">Contactar ahora</a>
+        <div class="advantage-grid">
+          <article class="advantage-card reveal"><span>01</span><i class="fa-solid fa-gauge-high"></i><h3>Rapidez</h3><p>Votaciones ágiles, control de tiempos y resultados sin conteos manuales.</p></article>
+          <article class="advantage-card reveal"><span>02</span><i class="fa-solid fa-magnifying-glass-chart"></i><h3>Transparencia</h3><p>Resultados claros por pregunta y consolidado final verificable.</p></article>
+          <article class="advantage-card reveal"><span>03</span><i class="fa-solid fa-headset"></i><h3>Acompañamiento</h3><p>Soporte técnico y operativo disponible durante todo el evento.</p></article>
+          <article class="advantage-card reveal"><span>04</span><i class="fa-solid fa-sliders"></i><h3>Flexibilidad</h3><p>La votación se adapta a las reglas y necesidades de cada copropiedad.</p></article>
         </div>
       </div>
     </section>
 
-    <!-- Contacto -->
-    <section id="contacto" class="section section-muted">
-      <div class="container grid-2">
+    <section class="cta-section">
+      <div class="container cta-card reveal">
         <div>
-          <h2 class="section-title">Contacto</h2>
-          <p class="text">Completa el formulario y te responderemos al correo o WhatsApp.</p>
+          <p class="section-kicker light">Tu próxima asamblea</p>
+          <h2>Convirtamos una jornada compleja en un proceso claro y ordenado.</h2>
+        </div>
+        <a class="btn btn-light" href="#contacto">Quiero recibir una propuesta <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </section>
 
-          <div class="contact-info">
-            <div class="contact-item">
-              <span class="contact-label">Correo</span>
-              <a class="contact-value" href="mailto:logisticadevotaciones1@gmail.com">logisticadevotaciones1@gmail.com</a>
-            </div>
-            <div class="contact-item">
-              <span class="contact-label">WhatsApp</span>
-              <a class="contact-value" href="https://wa.me/573195495173" target="_blank" rel="noopener">+57 319 549 5173</a>
-            </div>
+    <section id="contacto" class="section contact-section">
+      <div class="container contact-grid">
+        <div class="contact-copy reveal">
+          <p class="section-kicker">Hablemos</p>
+          <h2>Cuéntanos sobre tu próxima asamblea</h2>
+          <p>Comparte los datos básicos del evento y te contactaremos para preparar una propuesta ajustada a tus necesidades.</p>
+
+          <div class="contact-options">
+            <a href="https://wa.me/573195495173?text=Hola%2C%20quiero%20cotizar%20una%20asamblea." target="_blank" rel="noopener noreferrer">
+              <i class="fa-brands fa-whatsapp"></i><span><small>WhatsApp</small><strong>+57 319 549 5173</strong></span><i class="fa-solid fa-arrow-up-right-from-square arrow"></i>
+            </a>
+            <a href="mailto:logisticadevotaciones1@gmail.com">
+              <i class="fa-regular fa-envelope"></i><span><small>Correo</small><strong>logisticadevotaciones1@gmail.com</strong></span><i class="fa-solid fa-arrow-up-right-from-square arrow"></i>
+            </a>
           </div>
+
+          <div class="contact-promise"><i class="fa-solid fa-shield-heart"></i><p><strong>Atención personalizada</strong><br>Revisamos cada solicitud para recomendarte el servicio adecuado.</p></div>
         </div>
 
-        <div class="form-card">
-          <h3 class="form-title">Solicitar cotización</h3>
-
-          <form action="https://formsubmit.co/jsparrac17@gmail.com" method="POST">
-            <input type="text" name="_honey" style="display:none">
+        <div class="form-card reveal">
+          <div class="form-heading"><span>Solicitar cotización</span><p>Los campos marcados con * son obligatorios.</p></div>
+          <form action="https://formsubmit.co/jsparrac17@gmail.com" method="post">
+            <input type="text" name="_honey" class="honey" tabindex="-1" autocomplete="off">
             <input type="hidden" name="_captcha" value="false">
             <input type="hidden" name="_subject" value="Nuevo contacto desde GSS Voting Logistics">
             <input type="hidden" name="_next" value="https://gsslogistica.com/gracias.html">
-            
 
-            <div class="field">
-              <label for="nombre">Nombre</label>
-              <input id="nombre" name="nombre" type="text" placeholder="Tu nombre" required>
+            <div class="form-row">
+              <div class="field"><label for="nombre">Nombre *</label><input id="nombre" name="nombre" type="text" placeholder="Tu nombre" autocomplete="name" required></div>
+              <div class="field"><label for="telefono">Teléfono / WhatsApp *</label><input id="telefono" name="telefono" type="tel" placeholder="+57 3XX XXX XXXX" autocomplete="tel" required></div>
             </div>
-
-            <div class="field">
-              <label for="correo">Correo</label>
-              <input id="correo" name="correo" type="email" placeholder="tucorreo@ejemplo.com" required>
+            <div class="field"><label for="correo">Correo *</label><input id="correo" name="correo" type="email" placeholder="tucorreo@ejemplo.com" autocomplete="email" required></div>
+            <div class="form-row">
+              <div class="field"><label for="ciudad">Ciudad *</label><input id="ciudad" name="ciudad" type="text" placeholder="Ej. Bogotá" autocomplete="address-level2" required></div>
+              <div class="field"><label for="fecha">Fecha tentativa</label><input id="fecha" name="fecha" type="date"></div>
             </div>
-
-            <div class="field">
-              <label for="telefono">Teléfono / WhatsApp</label>
-              <input id="telefono" name="telefono" type="tel" placeholder="+57 3XX XXX XXXX" required>
-            </div>
-
-            <div class="field">
-              <label for="ciudad">Ciudad</label>
-              <input id="ciudad" name="ciudad" type="text" placeholder="Ej: Bogotá" required>
-            </div>
-
-            <div class="field grid-field">
-              <div>
-                <label for="fecha">Fecha tentativa</label>
-                <input id="fecha" name="fecha" type="date">
-              </div>
-              <div>
-                <label for="unidades"># Unidades / Asistentes</label>
-                <input id="unidades" name="unidades" type="number" min="1" placeholder="Ej: 120">
-              </div>
-            </div>
-
-            <div class="field">
-              <label for="mensaje">Mensaje</label>
-              <textarea id="mensaje" name="mensaje" rows="5" placeholder="Cuéntanos qué necesitas" required></textarea>
-            </div>
-
-            <button class="btn btn-primary btn-block" type="submit">Enviar</button>
-
-            <p class="form-hint">
-              Al enviar aceptas el tratamiento de datos (puedes agregar la política más adelante).
-            </p>
+            <div class="field"><label for="unidades">Número de unidades o asistentes</label><input id="unidades" name="unidades" type="number" min="1" placeholder="Ej. 120"></div>
+            <div class="field"><label for="mensaje">¿Qué necesitas? *</label><textarea id="mensaje" name="mensaje" rows="4" placeholder="Cuéntanos brevemente sobre tu asamblea" required></textarea></div>
+            <button class="btn btn-primary btn-block" type="submit">Enviar solicitud <i class="fa-solid fa-paper-plane"></i></button>
+            <p class="form-hint"><i class="fa-solid fa-lock"></i> Usaremos tus datos únicamente para responder esta solicitud.</p>
           </form>
         </div>
       </div>
     </section>
-
-    <footer class="footer">
-      <div class="container footer-inner">
-        <div>
-          <strong>GSS Voting Logistics</strong>
-          <div class="footer-sub">Logística de votaciones · Asambleas residenciales</div>
-        </div>
-        <div class="footer-copy">© <span id="year"></span> · Colombia</div>
-      </div>
-    </footer>
   </main>
 
-  <!-- Botón flotante WhatsApp con ÍCONO -->
-  <a
-    href="https://wa.me/573195495173?text=Hola%2C%20quiero%20cotizar%20una%20asamblea."
-    class="whatsapp-float"
-    target="_blank"
-    rel="noopener noreferrer"
-    aria-label="Contactar por WhatsApp"
-    title="Escríbenos por WhatsApp"
-  >
-    <i class="fa-brands fa-whatsapp"></i>
+  <footer class="footer">
+    <div class="container footer-top">
+      <div class="footer-brand"><img src="assets/logo_1.png" alt="GSS Voting Logistics" width="526" height="133"><p>Logística y votación electrónica para asambleas de propiedad horizontal.</p></div>
+      <div class="footer-links"><strong>Navegación</strong><a href="#quienes">Nosotros</a><a href="#servicios">Servicios</a><a href="#proceso">Cómo funciona</a><a href="#contacto">Contacto</a></div>
+      <div class="footer-links"><strong>Servicios</strong><span>Votación electrónica</span><span>Registro y logística</span><span>Sonido y grabación</span><span>Actas e informes</span></div>
+    </div>
+    <div class="container footer-bottom"><p>© <span id="year"></span> GSS Voting Logistics. Todos los derechos reservados.</p><p>Bogotá, Colombia</p></div>
+  </footer>
+
+  <a class="whatsapp-float" href="https://wa.me/573195495173?text=Hola%2C%20quiero%20cotizar%20una%20asamblea." target="_blank" rel="noopener noreferrer" aria-label="Contactar a GSS por WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i><span>Escríbenos</span>
   </a>
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    // Año automático
-    const yearEl = document.getElementById('year');
-    if (yearEl) yearEl.textContent = new Date().getFullYear();
 
-    // Menú móvil toggle
-    const menuBtn = document.getElementById('menuBtn');
-    const navMenu = document.getElementById('navMenu');
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const menuBtn = document.getElementById('menuBtn');
+      const navMenu = document.getElementById('navMenu');
+      const header = document.querySelector('.header');
+      const year = document.getElementById('year');
 
-    if (!menuBtn || !navMenu) return;
+      if (year) year.textContent = new Date().getFullYear();
 
-    menuBtn.addEventListener('click', (e) => {
-      e.stopPropagation();
-      const isOpen = navMenu.classList.toggle('nav-open');
-      menuBtn.setAttribute('aria-expanded', String(isOpen));
-    });
+      const closeMenu = () => {
+        navMenu?.classList.remove('nav-open');
+        menuBtn?.setAttribute('aria-expanded', 'false');
+        menuBtn?.setAttribute('aria-label', 'Abrir menú');
+      };
 
-    // Cerrar al hacer click en un link del menú
-    navMenu.querySelectorAll('a').forEach(link => {
-      link.addEventListener('click', () => {
-        navMenu.classList.remove('nav-open');
-        menuBtn.setAttribute('aria-expanded', 'false');
+      menuBtn?.addEventListener('click', () => {
+        const open = navMenu.classList.toggle('nav-open');
+        menuBtn.setAttribute('aria-expanded', String(open));
+        menuBtn.setAttribute('aria-label', open ? 'Cerrar menú' : 'Abrir menú');
       });
-    });
 
-    // Cerrar al hacer click fuera del menú
-    document.addEventListener('click', (e) => {
-      const clickedInsideNav = navMenu.contains(e.target);
-      const clickedMenuBtn = menuBtn.contains(e.target);
-      if (!clickedInsideNav && !clickedMenuBtn) {
-        navMenu.classList.remove('nav-open');
-        menuBtn.setAttribute('aria-expanded', 'false');
-      }
-    });
-
-    // Scroll suave
-    document.querySelectorAll('a[href^="#"]').forEach(a => {
-      a.addEventListener('click', (e) => {
-        const id = a.getAttribute('href');
-        if (!id || id === '#') return;
-        const el = document.querySelector(id);
-        if (!el) return;
-        e.preventDefault();
-        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      navMenu?.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMenu));
+      document.addEventListener('click', event => {
+        if (navMenu && menuBtn && !navMenu.contains(event.target) && !menuBtn.contains(event.target)) closeMenu();
       });
-    });
-  });
-</script>
 
+      window.addEventListener('scroll', () => header?.classList.toggle('scrolled', window.scrollY > 16), { passive: true });
+
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12 });
+      document.querySelectorAll('.reveal').forEach(element => observer.observe(element));
+    });
+  </script>
 </body>
 </html>
-
-
-
