@@ -1,32 +1,42 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gracias | GSS Voting Logistics</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0f6f78">
+  <meta name="robots" content="noindex">
+  <title>Solicitud recibida | GSS Voting Logistics</title>
+  <link rel="icon" href="assets/logo.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <link rel="stylesheet" href="styles.css">
+  <style>
+    .thanks-page { min-height: 100vh; background: radial-gradient(circle at 80% 10%, rgba(31,143,155,.16), transparent 32%), linear-gradient(135deg, #f3faf9, #fff); }
+    .thanks-shell { width: min(100% - 30px, 720px); min-height: 100vh; margin-inline: auto; padding: 42px 0; display: grid; align-content: center; gap: 30px; }
+    .thanks-logo { width: 230px; margin-inline: auto; }
+    .thanks-card { padding: 58px; border: 1px solid var(--line); border-radius: 28px; background: rgba(255,255,255,.94); box-shadow: var(--shadow-lg); text-align: center; }
+    .thanks-icon { width: 74px; height: 74px; margin: 0 auto 24px; display: grid; place-items: center; color: var(--primary-deep); background: var(--accent); border-radius: 50%; font-size: 1.5rem; box-shadow: 0 0 0 12px rgba(242,201,76,.16); }
+    .thanks-card h1 { margin: 10px 0 16px; color: var(--primary-deep); font-size: clamp(2rem, 6vw, 3rem); line-height: 1.1; letter-spacing: -.04em; }
+    .thanks-card > p:not(.section-kicker) { max-width: 540px; margin-inline: auto; color: var(--muted-ink); line-height: 1.8; }
+    .thanks-actions { display: flex; justify-content: center; gap: 10px; margin-top: 30px; flex-wrap: wrap; }
+    @media (max-width: 560px) { .thanks-card { padding: 42px 20px; } .thanks-actions .btn { width: 100%; } }
+  </style>
 </head>
-<body>
-
-<main class="section">
-  <div class="container" style="text-align:center">
-    <h1 class="section-title">¡Gracias por contactarnos!</h1>
-    <p class="text">
-      Hemos recibido tu información correctamente.
-      En breve nos comunicaremos contigo.
-    </p>
-
-    <div style="margin-top:24px">
-      <a href="https://wa.me/573195495173" class="btn btn-primary">
-        Escríbenos por WhatsApp
-      </a>
-      <br><br>
-      <a href="/" class="btn btn-outline">
-        Volver al inicio
-      </a>
-    </div>
-  </div>
-</main>
-
+<body class="thanks-page">
+  <main class="thanks-shell">
+    <a href="/" class="thanks-logo"><img src="assets/logo_1.png" alt="GSS Voting Logistics" width="526" height="133"></a>
+    <section class="thanks-card">
+      <div class="thanks-icon"><i class="fa-solid fa-check"></i></div>
+      <p class="section-kicker">Solicitud enviada</p>
+      <h1>¡Gracias por contactarnos!</h1>
+      <p>Recibimos la información de tu asamblea. Revisaremos la solicitud y nos comunicaremos contigo por correo o WhatsApp.</p>
+      <div class="thanks-actions">
+        <a href="https://wa.me/573195495173?text=Hola%2C%20acabo%20de%20enviar%20una%20solicitud%20desde%20la%20p%C3%A1gina%20web." class="btn btn-primary" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i> Escribir por WhatsApp</a>
+        <a href="/" class="btn btn-secondary"><i class="fa-solid fa-arrow-left"></i> Volver al inicio</a>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
